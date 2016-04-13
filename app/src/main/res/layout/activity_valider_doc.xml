@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:fitsSystemWindows="true"
+
+    tools:context="com.example.dell.mediatheque.ValiderDoc">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Titre Livre:"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etTitr"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="Les misérables"
+        android:focusable="false"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Date emprunt:"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etEmprunt"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="09/04/2016"
+        android:focusable="false"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Date limite retour:"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etRetour"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="09/05/2016"
+        android:focusable="false"/>
+
+    <Button
+        android:id="@+id/btValid"
+        android:text="Valider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="userDoc" />
+    <Button
+        android:id="@+id/btAnnul"
+        android:text="Annuler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="userAnnulerr" />
+</LinearLayout>

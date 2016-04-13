@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:fitsSystemWindows="true"
+
+    tools:context="com.example.dell.mediatheque.infoDocument">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Code Livre:"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etCode"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="14000"
+        android:focusable="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Titre Livre:"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/etTitre"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="Les misérables"
+        android:focusable="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Auteur Livre:"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etAuteur"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="Victor Hugo"
+        android:focusable="false"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Type Livre:"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etType"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="Fiction historique, Roman"
+        android:focusable="false"/>
+
+    <Button
+        android:id="@+id/btReserver"
+        android:text="Réserver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="userRes"/>
+    <Button
+        android:id="@+id/btAnnuler"
+        android:text="Annuler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="userAn"/>
+</LinearLayout>

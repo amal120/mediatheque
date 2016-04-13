@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:fitsSystemWindows="true"
+
+    tools:context="com.example.dell.mediatheque.Place">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Entrez date réservation:"
+        android:layout_height="wrap_content" />
+    <DatePicker
+        android:id="@+id/etRes"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Entrez heure réservation:"
+        android:layout_height="wrap_content" />
+
+
+    <TimePicker
+        android:id="@+id/etHeur"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btReserv"
+        android:text="Réserver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btAnnull"
+        android:text="Annuler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="userPlac" />
+</LinearLayout>
