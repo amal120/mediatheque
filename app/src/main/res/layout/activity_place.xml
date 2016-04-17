@@ -9,6 +9,13 @@
     android:fitsSystemWindows="true"
 
     tools:context="com.example.dell.mediatheque.Place">
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Entrez votre matricule:"
+        android:id="@+id/etMatt"
+        android:layout_marginTop="40dp"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:text="Entrez date réservation:"
@@ -35,7 +42,9 @@
         android:id="@+id/btReserv"
         android:text="Réserver"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:onClick="userP"
+        />
     <Button
         android:id="@+id/btAnnull"
         android:text="Annuler"
