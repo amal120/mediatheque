@@ -2,7 +2,6 @@ package com.example.dell.mediatheque;
 
 import android.app.AlertDialog;
 import android.content.Context;
-import android.content.IntentFilter;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
@@ -41,7 +40,7 @@ public class BackgroundTask extends AsyncTask <String,Void,String> {
         String reg_url = "http://192.168.124.1/media/register.php";
         String login_url = "http://192.168.124.1/media/Login.php";
         String method = params[0];
-        if (method.equals("register"))
+        if (params != null && method.equals("register"))
 
         {
             String matricule = params[1];
@@ -74,7 +73,7 @@ public class BackgroundTask extends AsyncTask <String,Void,String> {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        } else if (method.equals("login")) {
+        } else if (params != null && method.equals("login")) {
             String login_name = params[1];
             String login_pass = params[2];
             try {
@@ -120,7 +119,7 @@ public class BackgroundTask extends AsyncTask <String,Void,String> {
 
     @Override
     protected void onPostExecute(String result) {
-        if (result.equals("Registration Success...")) {
+        if (result != null && result.equals("Registration Success...")) {
             Toast.makeText(ctx, result, Toast.LENGTH_LONG).show();
 
         }
