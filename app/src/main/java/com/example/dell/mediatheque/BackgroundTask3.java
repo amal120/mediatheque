@@ -41,7 +41,7 @@ public class BackgroundTask3 extends AsyncTask <String,Void,String> {
     protected String doInBackground(String... params) {
         String plc_url = "http://192.168.124.1/media/place.php";
         String method = params[0];
-        if (method.equals("reservplac"))
+        if (params != null && method.equals("reservplac"))
 
         {
             String mat_etud = params[1];
