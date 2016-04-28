@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:padding="10dp"
     android:fitsSystemWindows="true"
+    android:background="@drawable/back"
 
     tools:context="com.example.dell.mediatheque.Register">
     <TextView
@@ -23,6 +24,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:hint="Matricule"
+        android:inputType="number"
         android:id="@+id/etMat"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
@@ -32,6 +34,7 @@
         android:layout_height="wrap_content"
         android:hint="Name"
         android:id="@+id/etName"
+        android:inputType="textPersonName"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
 />
@@ -40,6 +43,7 @@
         android:layout_height="wrap_content"
         android:hint="Classe"
         android:id="@+id/etClass"
+        android:inputType="text"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
 />
@@ -67,5 +71,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
         android:onClick="userReg"
+        android:background="@drawable/colorbutton"
+        android:textColor="@android:color/white"
         />
 </LinearLayout>
