@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:padding="10dp"
     android:fitsSystemWindows="true"
+    android:background="@drawable/back"
 
     tools:context="com.example.dell.mediatheque.MainActivity">
     <EditText
@@ -15,7 +16,14 @@
         android:hint="Login"
         android:id="@+id/login"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp"
+        android:autoText="true"
+
+        />
     <EditText
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -24,6 +32,10 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:inputType="textPassword"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         />
 
 
@@ -33,7 +45,9 @@
         android:layout_height="wrap_content"
         android:text="Login"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/colorbutton"
+        android:textColor="@android:color/white"
         android:onClick="userLogin"
 />
     <Button
@@ -41,7 +55,9 @@
         android:layout_height="wrap_content"
         android:text="Register here"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/colorbutton"
+        android:textColor="@android:color/white"
         android:onClick="userReg"
         />
 </LinearLayout>
