@@ -7,48 +7,68 @@
     android:layout_height="match_parent"
     android:padding="10dp"
     android:fitsSystemWindows="true"
+    android:background="@drawable/back"
 
     tools:context="com.example.dell.mediatheque.Place">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Entrez votre matricule:"
+        android:layout_height="wrap_content" />
     <EditText
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:hint="Entrez votre matricule:"
         android:id="@+id/etMatt"
-        android:layout_marginTop="40dp"/>
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:text="Entrez date réservation:"
         android:layout_height="wrap_content" />
-    <DatePicker
+    <EditText
         android:id="@+id/etRes"
         android:layout_width="match_parent"
         android:layout_marginBottom="10dp"
         android:layout_height="wrap_content"
+        android:inputType="date"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:text="Entrez heure réservation:"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        />
 
 
-    <TimePicker
+    <EditText
         android:id="@+id/etHeur"
         android:layout_width="match_parent"
         android:layout_marginBottom="10dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        />
     <Button
         android:id="@+id/btReserv"
         android:text="Réserver"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:onClick="userP"
+        android:background="@drawable/colorbutton"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="50dp"
+
         />
     <Button
         android:id="@+id/btAnnull"
         android:text="Annuler"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="userPlac" />
+        android:onClick="userPlac"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/colorbutton"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        />
 </LinearLayout>
