@@ -4,26 +4,26 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Mediatheque"
+        android:label="MediaULT"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="Mediatheque" />
+            android:label="Authentification" />
         <activity
             android:name=".Register"
-            android:label="@string/title_activity_register"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Accueil"
-            android:label="@string/title_activity_accueil"
+            android:label="Register"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".DocInterface"
-            android:label="@string/title_activity_document"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Place"
@@ -33,17 +33,20 @@
             android:name=".ValiderDoc"
             android:label="@string/title_activity_valider_doc"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SplashActivity"
-            android:label="@string/title_activity_splash"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
         </activity>
+        <activity android:name=".DocAccueilActivity"
+            android:label="Documents"
+            />
+        <activity
+            android:name=".Mediatheque"
+            android:label="Accueil"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
